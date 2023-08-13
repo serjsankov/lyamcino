@@ -1,0 +1,212 @@
+.main-banner {
+    background-image: url(../img/main-banner.webp);
+    background-size: cover;
+    background-position: center;
+
+    padding: 94px 0 110px;
+
+    aspect-ratio: 1920/640;
+
+    @media screen and (max-width: 1600px) {
+        padding: 70px 0 110px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        padding: 60px 0 90px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        aspect-ratio: 1024/545;
+
+        padding: 158px 0;
+    }
+
+    @media screen and (max-width: 900px) {
+        padding: 110px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        aspect-ratio: 768/467;
+
+        padding: 119px 0;
+
+        background-image: url(../img/main-banner_tab.webp);
+    }
+
+    @media screen and (max-width: 630px) {
+        aspect-ratio: 430/317;
+        background-image: url(../img/main-banner_mob.webp);
+
+        padding: 71px 0 0;
+    }
+
+    &__container {
+        @media screen and (max-width: 630px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__sub-title {
+        font-family: $fontSource;
+        font-size: 0.41rem;
+        line-height: 0.61rem;
+        font-weight: 600;
+        color: #6D6D6D;
+
+        display: block;
+
+        margin-top: 6px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 24px;
+            line-height: 26px;
+
+            width: 439px;
+        }
+
+        @media screen and (max-width: 630px) {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-family: $fontSource;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+        color: $colorBlack;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 42px;
+            line-height: 44px;
+        }
+
+        @media screen and (max-width: 630px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        &-mob {
+            @media screen and (max-width: 630px) {
+                font-size: 25px;
+                line-height: 27px;
+            }
+        }
+    }
+
+    &__networks {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 21px;
+
+        margin-bottom: 55px;
+
+        @media screen and (max-width: 1440px) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+
+        @media screen and (max-width: 630px) {
+            display: flex;
+            justify-content: center;
+
+            order: 1;
+
+            margin: 25px 0 0;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        font-size: .29rem;
+        line-height: 0.5rem;
+        font-weight: 44;
+        color: #6D6D6D;
+        text-decoration: none;
+
+        margin-top: 11px;
+
+        @media screen and (max-width: 1600px) {
+            font-size: .33rem;
+            line-height: .55rem;
+        }
+
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+
+    &__address {
+        width: 163px;
+        height: 34px;
+
+        background: $colorBlue;
+
+        border-radius: 24px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        color: $colorWhite;
+
+        @media screen and (max-width: 1280px) {
+            font-size: 14px;
+            line-height: 16px;
+
+            width: 150px;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        margin-top: 30px;
+
+        @media screen and (max-width: 1024px) {
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 630px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+
+            margin-top: 41px;
+        }
+    }
+
+    &__button {
+            flex-basis: 24%;
+
+            @media screen and (max-width: 1024px) {
+                flex-basis: auto;
+
+                width: 220px;
+            }
+
+            @media screen and (max-width: 450px) {
+                flex-basis: auto;
+                
+                width: 100%;
+            }
+    }
+}

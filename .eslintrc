@@ -1,0 +1,41 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parser": "babel-eslint",
+    "rules": {
+        "indent": [
+            1,
+            2
+        ], // indent = 2 spaces
+        "linebreak-style": [
+            0,
+            "unix"
+        ], // off
+        "quotes": [
+            1,
+            "single"
+        ],
+        "semi": [
+            1,
+            "always"
+        ],
+        "no-alert": 1,
+        "no-bitwise": 1,
+        "camelcase": 1,
+        "curly": 1,
+        "eqeqeq": 1,
+        "no-eq-null": 1,
+        "guard-for-in": 1,
+        "no-empty": 1,
+        "eol-last": 1,
+        "no-unused-vars": 1,
+        "no-lone-blocks": 1
+    },
+    "globals": {
+        "$": false
+    }
+}

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Regular'), local('Lato-Regular'),
+        url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Semi Bold'), local('Lato-Semi-Bold'),
+        url('../fonts/Lato-Semibold.woff2') format('woff2'),
+        url('../fonts/Lato-Semibold.woff') format('woff'),
+        url('../fonts/Lato-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: local('Source Serif Pro Regular'), local('Source-Serif-Pro-Regular'),
+        url('../fonts/SourceSerifPro-Regular.woff2') format('woff2'),
+        url('../fonts/SourceSerifPro-Regular.woff') format('woff'),
+        url('../fonts/SourceSerifPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: local('Source Serif Pro Semibold'), local('Source-Serif-Pro-Semibold'),
+        url('../fonts/SourceSerifPro-SemiboldIt.woff2') format('woff2'),
+        url('../fonts/SourceSerifPro-SemiboldIt.woff') format('woff'),
+        url('../fonts/SourceSerifPro-SemiboldIt.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+$fontLato: 'Lato';
+$fontSource: 'Source Serif Pro';

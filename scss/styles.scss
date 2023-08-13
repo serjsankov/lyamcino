@@ -1,0 +1,9 @@
+body {
+    font-family: $fontLato;
+
+    background: #F1F4FF;
+
+    &.js-body-scroll {
+        overflow: hidden;
+    }
+}
