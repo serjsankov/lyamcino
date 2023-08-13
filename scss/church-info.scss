@@ -1,0 +1,166 @@
+.church-info {
+    padding: 50px 0 22px;
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 31px;
+
+        @media screen and (max-width: 1280px) {
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 840px) {
+            display: grid;
+            grid-template-areas: "item1 item2"
+            "item1 item3";
+        }
+
+        @media screen and (max-width: 600px) {
+            grid-template-areas: "item1"
+            "item2"
+            "item3";
+        }
+    }
+
+    &__head {
+        display: block;
+
+        font-size: 27px;
+        line-height: 29px;
+        font-weight: 600;
+        color: $colorBlack;
+
+        margin-bottom: 18px;
+
+        @media screen and (max-width: 1280px) {
+            font-size: 24px;
+            line-height: 26px;
+        }
+
+        @media screen and (max-width: 840px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__prev {
+        width: 210px;
+
+        @media screen and (max-width: 1280px) {
+            width: 140px;
+        }
+
+        @media screen and (max-width: 600px) {
+            margin: 0 auto;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        &-text {
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #6D6D6D;
+
+            display: block;
+
+            margin-top: 18px;
+
+            @media screen and (max-width: 1280px) {
+                font-size: 15px;
+                line-height: 17px;
+            }
+
+            @media screen and (max-width: 600px) {
+                text-align: center;
+            }
+        }
+    }
+
+    &__calendar {
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #6D6D6D;
+
+        @media screen and (max-width: 1280px) {
+            font-size: 21px;
+            line-height: 23px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #6D6D6D;
+
+        display: block;
+
+        @media screen and (max-width: 1280px) {
+            font-size: 15px;
+            line-height: 17px;
+        }
+    }
+
+    .dark_color {
+        color: $colorBlack;
+    }
+
+    &__item {
+
+        &.flex_basis_1 {
+            flex-basis: 25%;
+
+            @media screen and (max-width: 1280px) {
+                flex-basis: 20%;
+            }
+
+            @media screen and (max-width: 840px) {
+                grid-area: item1;
+
+                width: 164px;
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 100%;
+            }
+        }
+
+        &.flex_basis_2 {
+            flex-basis: 51%;
+
+            @media screen and (max-width: 1280px) {
+                flex-basis: 41%;
+            }
+
+            @media screen and (max-width: 840px) {
+                grid-area: item2;
+            }
+        }
+        
+        &.flex_basis_3 {
+            flex-basis: 25%;
+
+            @media screen and (max-width: 1280px) {
+                flex-basis: 39%;
+            }
+
+            @media screen and (max-width: 840px) {
+                grid-area: item3;
+            }
+        }
+    }
+
+    .text_margin_bottom {
+        display: block;
+
+        margin-bottom: 18px;
+
+        @media screen and (max-width: 840px) {
+            margin-bottom: 20px;
+        }
+    }
+}
