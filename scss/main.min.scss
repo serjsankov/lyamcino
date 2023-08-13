@@ -1,3 +1,16 @@
+//swiper
+@import "../node_modules/swiper/swiper.scss";
+@import "../node_modules/swiper/components/controller/controller.scss";
+@import "../node_modules/swiper/components/navigation/navigation.scss";
+@import "../node_modules/swiper/components/pagination/pagination.scss";
+@import "../node_modules/swiper/components/a11y/a11y.scss";
+@import "../node_modules/swiper/components/lazy/lazy.scss";
+@import "../node_modules/swiper/components/thumbs/thumbs.scss";
+@import "../node_modules/swiper/components/scrollbar/scrollbar.scss";
+@import "../node_modules/swiper/components/effect-fade/effect-fade.scss";
+@import "../node_modules/swiper/components/effect-coverflow/effect-coverflow.scss";
+@import "../node_modules/swiper/components/effect-cube/effect-cube.scss";
+
 @import "reset";
 
 @import "fonts";
@@ -6,5 +19,6 @@
 @import "header";
 @import "main-banner";
 @import "info";
+@import "news";
 
 @import "styles";
