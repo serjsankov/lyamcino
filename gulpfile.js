@@ -27,12 +27,12 @@ sass.compiler = require('node-sass');
 
 // SCSS
 const scssSrc = 'scss/main.min.scss',
-    scssDist = 'public_html/samovar/front/css',
+    scssDist = 'public_html/buddy/front/css',
     scssFiles = 'scss/**/*.scss';
 
 // JS
 const jsSrc = 'js/main.min.js',
-    jsDist = 'public_html/samovar/front/js',
+    jsDist = 'public_html/buddy/front/js',
     jsFiles = 'js/**/*.js';
 
 // LAYOUT
