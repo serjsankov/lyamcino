@@ -6,7 +6,7 @@ export let swiper = {
     },
 
     swiperNewsMob: function () {
-        if (document.body.clientWidth < 768) {
+        if (document.body.clientWidth < 769) {
             var swiperNews = new Swiper(".news-swiper", {
                 pagination: {
                     el: ".swiper-pagination",

@@ -103,3 +103,16 @@ html {
         color: $colorBlack;
     }
 }
+
+.swiper {
+    position: relative;
+}
+
+.swiper-pagination-bullet {
+    background: $colorBlack;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: $colorBlue;
+}

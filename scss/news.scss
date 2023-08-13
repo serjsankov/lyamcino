@@ -9,7 +9,15 @@
         row-gap: 62px;
         column-gap: 30px;
 
-        @media screen and (max-width: 575px) {
+        @media screen and (max-width: 975px) {
+            column-gap: 15px;
+        }
+
+        @media screen and (max-width: 850px) {
+            grid-template-columns: repeat(2, minmax(auto, 1fr));
+        }
+
+        @media screen and (max-width: 768px) {
             display: flex;
             column-gap: 0;
             row-gap: 0;
@@ -30,6 +38,10 @@
             justify-content: center;
 
             border-radius: 10px;
+
+            @media screen and (max-width: 575px) {
+                height: 250px;
+            }
         }
 
         &-date {
@@ -45,6 +57,8 @@
             padding: 4px 10px;
 
             width: max-content;
+
+            border-radius: 30px;
         }
 
         &-info {
@@ -54,6 +68,16 @@
             color: $colorBlack;
 
             display: block;
+
+            @media screen and (max-width: 1280px) {
+                font-size: 16px;
+                line-height: 18px;
+            }
+
+            @media screen and (max-width: 850px) {
+                font-size: 19px;
+                line-height: 21px;
+            }
         }
     }
 
@@ -61,6 +85,12 @@
         width: 100%;
 
         border-radius: 10px;
+
+        @media screen and (max-width: 575px) {
+            height: 100%;
+
+            object-fit: cover;
+        }
     }
 
     &__button {
@@ -68,14 +98,26 @@
 
         margin: 30px auto 0;
 
+        @media screen and (max-width: 768px) {
+            margin: 30px auto 0;
+        } 
+
         @media screen and (max-width: 575px) {
             width: 100%;
-
-            margin: 102px auto 0;
-        } 
+        }
     }
 
     .swiper {
         overflow: hidden;
+
+        @media screen and (max-width: 768px) {
+            padding-bottom: 87px;
+        }
+    }
+
+    .swiper-pagination {
+        @media screen and (max-width: 768px) {
+            bottom: 0;
+        }
     }
 }
