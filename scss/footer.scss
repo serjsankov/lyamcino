@@ -1,0 +1,128 @@
+.footer {
+    padding: 0 0 72px;
+
+    &__container {
+        border-top: 1px dashed $colorBlack;
+
+        padding: 29px 0 0;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+
+        flex-basis: 19%;
+
+        @media screen and (max-width: 600px) {
+            flex-basis: auto;
+            align-items: center;
+
+            width: 100%;
+        }
+
+        &-local {
+            display: flex;
+            gap: 7px;
+
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #6D6D6D;
+            text-decoration: none;
+
+            @media screen and (max-width: 600px) {
+                justify-content: center;
+            }
+        }
+
+        &-networks {
+            text-decoration: none;
+        }
+    }
+
+    &__title {
+        font-size: 27px;
+        line-height: 32px;
+        font-weight: 600;
+        color: $colorBlack;
+
+        display: block;
+
+        @media screen and (max-width: 600px) {
+            text-align: center;
+        }
+    }
+
+    &__compilations {
+        display: grid;
+        grid-template-areas: "area1"
+        "area3"
+        "area2";
+
+        @media screen and (max-width: 1024px) {
+            flex-basis: 50%;
+        }
+
+        @media screen and (max-width: 768px) {
+            grid-template-areas: "area1 area2"
+            "area3 area2";
+        }
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+
+        &-item {
+            &.area-1 {
+                grid-area: area1;
+            }
+            &.area-2 {
+                grid-area: area2;
+            }
+            &.area-3 {
+                grid-area: area3;
+            }
+        }
+
+        &-head {
+            font-family: $fontSource;
+            font-size: 24px;
+            line-height: 26px;
+            font-weight: 400;
+            color: #6D6D6D;
+        }
+
+        &-link {
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+
+    &__pages {
+        @media screen and (max-width: 1024px) {
+            flex-basis: 50%;
+        }
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+
+        &-link {
+            font-size: 24px;
+            line-height: 26px;
+        }
+    }
+
+    &__link {
+        display: block;
+
+        font-weight: 400;
+        color: $colorBlack;
+        text-decoration: none;
+    }
+}
