@@ -1,3 +1,196 @@
 .timetable {
+    &__upper {
+        padding-bottom: 20px;
+
+        @media screen and (max-width: 740px) {
+            padding: 26px 0 20px;
+        }
+    }
+    &__list {
+        display: grid;
+        gap: 10px;
+
+        .list_item_style {
+            border-radius: 10px;
+            background: #FFF;
     
+            font-size: 21px;
+            line-height: 23px;
+            font-weight: 400;
+            color: $colorBlack;
+    
+            padding: 16px;
+
+            @media screen and (max-width: 1280px) {
+                font-size: 18px;
+                line-height: 20px;
+            }
+
+            @media screen and (max-width: 1000px) {
+                font-size: 16px;
+                line-height: 18px;
+            }
+
+            @media screen and (max-width: 740px) {
+                border-radius: 0;
+
+                padding: 0;
+            }
+        }
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+
+            @media screen and (max-width: 740px) {
+                flex-direction: column;
+                gap: 0;
+
+                padding: 16px;
+
+                background: $colorWhite;
+
+                border-radius: 10px;
+            }
+        }
+
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+
+            @media screen and (max-width: 740px) {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+
+        &-block {
+            display: grid;
+            gap: 10px;
+
+            flex-basis: 83%; 
+
+            @media screen and (max-width: 1025px) {
+                flex-basis: 80%;
+            }
+        }
+
+        &-text {
+            flex-basis: 89%;
+
+            display: flex;
+            align-items: center;
+
+            @media screen and (max-width: 740px) {
+                flex-basis: auto;
+                width: 100%;
+            }
+
+            &.active {
+                font-weight: 700;
+            }
+        }
+
+        &-time {
+            // flex-basis: 10%;
+            
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            width: 120px;
+
+            @media screen and (max-width: 1025px) {
+                width: 90px;
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 68px;
+            }
+
+            @media screen and (max-width: 740px) {
+                width: 100%;
+                
+                justify-content: flex-start;
+            }
+
+            span {
+                @media screen and (max-width: 740px) {
+                    color: #767FA0;
+                }
+            }
+        }
+
+        &-date {
+            flex-basis: 17%;
+
+            span {
+                display: block;
+
+                @media screen and (max-width: 740px) {
+                    display: inline-block;
+                }
+            }
+
+            @media screen and (max-width: 1025px) {
+                width: 180px;
+
+                flex-basis: 19%;
+            }
+
+            @media screen and (max-width: 740px) {
+                flex-basis: auto;
+                width: 100%;
+
+                margin-bottom: 10px;
+            }
+
+            &.active {
+                color: #FD415A;
+            }
+        }
+
+        &-head {
+            display: block;
+
+            font-size: 27px;
+            line-height: 29px;
+            font-weight: 700;
+            color: $colorWhite;
+            text-align: center;
+
+            padding: 16px 0;
+            margin: 10px 0;
+
+            border-radius: 10px;
+            background: #767FA0;
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .swiper {
+        @media screen and (max-width: 1025px) {
+            padding-bottom: 115px;
+        }
+
+        @media screen and (max-width: 575px) {
+            padding-bottom: 55px;
+        }
+    }
+
+    .swiper-wrapper {
+        flex-direction: column;
+        // gap: 10px;
+
+        @media screen and (max-width: 1025px) {
+            flex-direction: row;
+            gap: 0;
+        }
+    }
 }
