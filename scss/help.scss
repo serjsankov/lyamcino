@@ -1,6 +1,24 @@
 .help {
     &__upper {
         padding: 0 0 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+        }
+    }
+
+    &__button {
+        width: 330px;
+
+        @media screen and (max-width: 1025px) {
+            width: 200px;
+        }
     }
 
     &__container {
