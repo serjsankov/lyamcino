@@ -2,6 +2,22 @@ export let ui = {
     init: function () {
         this.headerMob();
         this.headerMenuMobClick();
+        this.changeSelectNote();
+
+        $('select').niceSelect();
+    },
+
+    changeSelectNote: function () {
+        $(".js-select-note").on("change", function () {
+            var value = $(this).val(),
+                head = value.split('/')[0],
+                text = value.split('/')[1],
+                className = value.split('/')[2];
+
+            $(".js_text_head").text(`${head}`);
+            $(".js_text_info").text(`${text}`);
+            $(".js-note ").attr("class", `form__block-note js-note ${className}`);
+        })
     },
 
     headerMenuMobClick: function () {

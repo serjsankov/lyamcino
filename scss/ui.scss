@@ -47,6 +47,10 @@ html {
             font-size: 27px;
             line-height: 29px;
         }
+
+        &.align_center {
+            text-align: center;
+        }
     }
 }
 
@@ -127,4 +131,63 @@ html {
 
 .swiper-pagination-bullet-active {
     background: $colorBlue;
+}
+
+.nice-select {
+    width: 100%;
+    height: 39px;
+
+    padding-left: 13px;
+
+    border-radius: 10px;
+    border: 1px solid #B4BACF;
+
+    display: flex;
+    align-items: center;
+
+    background: #FFF;
+}
+
+.nice-select:after {
+    background: url(../img/arrow-select.svg)no-repeat;
+
+    border: none;
+    width: 19px;
+    height: 19px;
+    transform: none;
+
+    margin-top: 0;
+    top: 10px;
+}
+
+.nice-select.open:after {
+    transform: scale(-1);
+
+    top: 0;
+}
+
+.nice-select.open .list {
+    width: 100%;
+}
+
+.nice-select .option {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $colorBlack;
+
+    display: flex;
+    align-items: center;
+}
+
+.nice-select .option.focus, .nice-select .option.selected.focus, .nice-select .option:hover {
+    background: #EBEFFD;
+    color: $colorBlack;
+    font-weight: 400;
+}
+
+.nice-select .option.disabled {
+    background: none;
+    font-weight: 700;
+    color: $colorBlack;
 }
