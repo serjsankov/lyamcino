@@ -3,8 +3,112 @@ export let ui = {
         this.headerMob();
         this.headerMenuMobClick();
         this.changeSelectNote();
+        this.yearClick();
+        this.monthClick();
 
         $('select').niceSelect();
+    },
+    monthClick: function () {
+        let monthBlock = document.querySelectorAll(".js-month-block"),
+            nextMonth = document.querySelector(".js-next-month"),
+            index = 0,
+            lastIndex = monthBlock.length - 1;
+
+        if (nextMonth) {
+            monthBlock.forEach((year, yearIndex) => {
+                year.addEventListener("click", (e) => {
+                    monthBlock.forEach(el => {
+                        el.classList.remove("active");
+                    });
+                    index = yearIndex;
+                    year.classList.add("active");
+                    if (index !== lastIndex) {
+                        nextMonth.disabled = false;
+                    };
+                });
+
+            });
+
+            nextMonth.addEventListener("click", (e) => {
+                checkIndexActive();
+            });
+
+            function checkIndexActive() {
+                monthBlock.forEach((el, elIndex) => {
+                    if (el.classList.contains("active") && elIndex !== lastIndex) {
+                        index = elIndex + 1;
+                        el.classList.remove("active");
+                    }
+                });
+                if (index !== lastIndex) {
+                    monthBlock.forEach((el, elIndex) => {
+                        if (elIndex === index) {
+                            el.classList.add("active");
+                        }
+                    })
+                } else {
+                    monthBlock.forEach((el, elIndex) => {
+                        if (elIndex === index) {
+                            el.classList.add("active");
+                            nextMonth.disabled = true;
+                        }
+                    })
+                }
+            };
+        }
+
+    },
+
+    yearClick: function () {
+        let monthBlock = document.querySelectorAll(".js-year-block"),
+            nextYear = document.querySelector(".js-next-year"),
+            index = 0,
+            lastIndex = monthBlock.length - 1;
+
+        if (nextYear) {
+            monthBlock.forEach((year, yearIndex) => {
+                year.addEventListener("click", (e) => {
+                    monthBlock.forEach(el => {
+                        el.classList.remove("active");
+                    });
+                    index = yearIndex;
+                    year.classList.add("active");
+                    if (index !== lastIndex) {
+                        nextYear.disabled = false;
+                    };
+                });
+            });
+
+
+
+            nextYear.addEventListener("click", (e) => {
+                checkIndexActive();
+            });
+
+            function checkIndexActive() {
+                monthBlock.forEach((el, elIndex) => {
+                    if (el.classList.contains("active") && elIndex !== lastIndex) {
+                        index = elIndex + 1;
+                        el.classList.remove("active");
+                    }
+                });
+                if (index !== lastIndex) {
+                    monthBlock.forEach((el, elIndex) => {
+                        if (elIndex === index) {
+                            el.classList.add("active");
+                        }
+                    })
+                } else {
+                    monthBlock.forEach((el, elIndex) => {
+                        if (elIndex === index) {
+                            el.classList.add("active");
+                            nextYear.disabled = true;
+                        }
+                    })
+                }
+            };
+        }
+
     },
 
     changeSelectNote: function () {

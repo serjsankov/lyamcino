@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public_html/buddy/front/css/main.min.css">
-    <title>Main page</title>
+    <title>Gallery detail</title>
 </head>
 
 <body>
@@ -195,76 +195,61 @@
                 </div>
             </div>
         </section>
-        <section class="info section">
+        <section class="gallery-detail">
             <div class="container">
-                <div class="info__container">
-                    <div class="info__item">
-                        <span class="info__text">Храм и церковная лавка открыты ежедневно:</span>
-                        <div class="info__item-flex">
-                            <span class="info__text">Понедельник – пятница</span>
-                            <span class="info__text">с 9.00 до 16.00</span>
-                        </div>
-                        <div class="info__item-flex">
-                            <span class="info__text">Суббота</span>
-                            <span class="info__text">с 9.00 до 19.00</span>
-                        </div>
-                        <div class="info__item-flex">
-                            <span class="info__text">Воскресение</span>
-                            <span class="info__text">с 9.00 до 17.00</span>
-                        </div>
-                    </div>
-                    <div class="info__item">
-                        <span class="info__text">
-                            В большие церковные праздники храм открыт с 9.00 до 18.00, вне зависимости от дня недели.
-                        </span>
-                    </div>
-                    <div class="info__item">
-                        <span class="info__text">
-                            Телефон храма:
-                        </span>
-                        <a href="tel:8-909-938-55-38" class="info__text-number">8-909-938-55-38</a>
+                <div class="gallery-detail__upper section__upper">
+                    <h2 class="section__title">Пасха! Весна!</h2>
+                </div>
+                <div class="quote">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="55" height="45" viewBox="0 0 55 45" fill="none">
+                        <path
+                            d="M0 30.4369C0 24.0291 2.06989 18.1553 6.20968 12.8155C10.3495 7.47573 15.4749 3.20388 21.586 0L24.2473 4.66019C21.2903 6.79612 18.629 9.07767 16.2634 11.5049C13.8979 13.932 11.8772 16.7961 10.2016 20.0971L15.672 24.466C17.9391 26.2136 19.4668 27.9612 20.2554 29.7087C21.0439 31.4563 21.4382 33.301 21.4382 35.2427C21.4382 38.2524 20.5018 40.6311 18.629 42.3786C16.7563 44.1262 14.3907 45 11.5323 45C9.6595 45 7.98387 44.6602 6.50538 43.9806C5.02688 43.301 3.69624 42.4757 2.51344 41.5049C0.837813 38.0097 0 34.3204 0 30.4369ZM30.7527 30.4369C30.7527 24.0291 32.8226 18.1553 36.9624 12.8155C41.1021 7.47573 46.2276 3.20388 52.3387 0L55 4.66019C52.043 6.79612 49.3817 9.07767 47.0161 11.5049C44.6505 13.932 42.6299 16.7961 40.9543 20.0971L46.4247 24.466C48.6918 26.2136 50.2195 27.9612 51.0081 29.7087C51.7966 31.4563 52.1909 33.301 52.1909 35.2427C52.1909 38.2524 51.2545 40.6311 49.3817 42.3786C47.509 44.1262 45.1434 45 42.2849 45C40.4122 45 38.7366 44.6602 37.2581 43.9806C35.7796 43.301 34.4489 42.4757 33.2661 41.5049C31.5905 38.0097 30.7527 34.3204 30.7527 30.4369Z"
+                            fill="#767FA0"></path>
+                    </svg>
+                    <div class="quote__text">
+                        <span>Природа есть в некотором смысле Евангелие, благовествующее громко творческую силу,
+                            премудрость и величие Бога. И не только небеса, но и недра земли проповедуют славу
+                            Божию</span>
+                        <span class="quote__text_small">М.Ломоносов</span>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="news section">
-            <div class="container">
-                <div class="news__upper section__upper">
-                    <h2 class="news__title section__title">Что нового</h2>
-                </div>
-                <div class="swiper news-swiper">
-                    <div class="swiper-wrapper news__container">
-                        <div class="swiper-slide">
-                            <div class="news__card">
-                                <div class="news__card-img">
-                                    <img src="./public_html/buddy/front/img/prev.png" alt="image" class="news__img">
-                                </div>
-                                <span class="news__card-date">04 марта 2023</span>
-                                <span class="news__card-info">Память святого Федора Тирона</span>
+                <div class="gallery-detail__container">
+                    <div class="swiper gallery-detail-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="./public_html/buddy/front/img/gallery-detail_1.png" data-fancybox
+                                    class="gallery-detail__container-item">
+                                    <img src="./public_html/buddy/front/img/gallery-detail_1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./public_html/buddy/front/img/gallery-detail_1.png" data-fancybox
+                                    class="gallery-detail__container-item">
+                                    <img src="./public_html/buddy/front/img/gallery-detail_1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./public_html/buddy/front/img/gallery-detail_1.png" data-fancybox
+                                    class="gallery-detail__container-item">
+                                    <img src="./public_html/buddy/front/img/gallery-detail_1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./public_html/buddy/front/img/gallery-detail_1.png" data-fancybox
+                                    class="gallery-detail__container-item">
+                                    <img src="./public_html/buddy/front/img/gallery-detail_1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./public_html/buddy/front/img/gallery-detail_1.png" data-fancybox
+                                    class="gallery-detail__container-item">
+                                    <img src="./public_html/buddy/front/img/gallery-detail_1.png" alt="">
+                                </a>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="news__card">
-                                <div class="news__card-img">
-                                    <img src="./public_html/buddy/front/img/prev.png" alt="image" class="news__img">
-                                </div>
-                                <span class="news__card-date">04 марта 2023</span>
-                                <span class="news__card-info">Память святого Федора Тирона</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="news__card">
-                                <div class="news__card-img">
-                                    <img src="./public_html/buddy/front/img/prev.png" alt="image" class="news__img">
-                                </div>
-                                <span class="news__card-date">04 марта 2023</span>
-                                <span class="news__card-info">Память святого Федора Тирона</span>
-                            </div>
-                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
-                <a href="archive-news.html" class="news__button btn border">Архив новостей</a>
             </div>
         </section>
         <section class="church-info section">

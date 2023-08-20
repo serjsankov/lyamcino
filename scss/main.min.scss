@@ -1,3 +1,4 @@
+@import "mixins";
 //swiper
 @import "../node_modules/swiper/swiper.scss";
 @import "../node_modules/swiper/components/controller/controller.scss";
@@ -15,6 +16,11 @@
 //jquery-nice-select
 @import "../node_modules/jquery-nice-select/scss/nice-select.scss";
 
+// fancybox
+// @import "../node_modules/@fancyapps/fancybox/src/css/";
+
+@import "fancybox";
+
 @import "reset";
 
 @import "fonts";
@@ -30,5 +36,6 @@
 @import "contacts";
 @import "help";
 @import "form";
+@import "gallery";
 
 @import "styles";

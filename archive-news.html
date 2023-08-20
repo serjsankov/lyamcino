@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public_html/buddy/front/css/main.min.css">
-    <title>Main page</title>
+    <title>Document</title>
 </head>
 
 <body>
@@ -195,44 +195,78 @@
                 </div>
             </div>
         </section>
-        <section class="info section">
+        <section class="archive-news news">
             <div class="container">
-                <div class="info__container">
-                    <div class="info__item">
-                        <span class="info__text">Храм и церковная лавка открыты ежедневно:</span>
-                        <div class="info__item-flex">
-                            <span class="info__text">Понедельник – пятница</span>
-                            <span class="info__text">с 9.00 до 16.00</span>
-                        </div>
-                        <div class="info__item-flex">
-                            <span class="info__text">Суббота</span>
-                            <span class="info__text">с 9.00 до 19.00</span>
-                        </div>
-                        <div class="info__item-flex">
-                            <span class="info__text">Воскресение</span>
-                            <span class="info__text">с 9.00 до 17.00</span>
-                        </div>
-                    </div>
-                    <div class="info__item">
-                        <span class="info__text">
-                            В большие церковные праздники храм открыт с 9.00 до 18.00, вне зависимости от дня недели.
-                        </span>
-                    </div>
-                    <div class="info__item">
-                        <span class="info__text">
-                            Телефон храма:
-                        </span>
-                        <a href="tel:8-909-938-55-38" class="info__text-number">8-909-938-55-38</a>
-                    </div>
+                <div class="news__upper archive_padding section__upper">
+                    <h2 class="section__title">Архив новостей</h2>
                 </div>
-            </div>
-        </section>
-        <section class="news section">
-            <div class="container">
-                <div class="news__upper section__upper">
-                    <h2 class="news__title section__title">Что нового</h2>
+                <div class="year__container">
+                    <div class="year__block active js-year-block">
+                        <span>2023</span>
+                    </div>
+                    <div class="year__block js-year-block">
+                        <span>2022</span>
+                    </div>
+                    <div class="year__block js-year-block">
+                        <span>2021</span>
+                    </div>
+                    <div class="year__block js-year-block">
+                        <span>2020</span>
+                    </div>
+                    <div class="year__block js-year-block">
+                        <span>2019</span>
+                    </div>
+                    <div class="year__block js-year-block">
+                        <span>2018</span>
+                    </div>
+                    <div class="year__block js-year-block">
+                        <span>2017</span>
+                    </div>
+                    <div class="year__block js-year-block">
+                        <span>2016</span>
+                    </div>
+                    <div class="year__block js-year-block">
+                        <span>2015</span>
+                    </div>
+                    <div class="year__block js-year-block">
+                        <span>2013</span>
+                    </div>
+                    <div class="year__block js-year-block">
+                        <span>2012</span>
+                    </div>
+                    <div class="year__block js-year-block">
+                        <span>2011</span>
+                    </div>
+                    <div class="year__block js-year-block">
+                        <span>2010</span>
+                    </div>
+                    <button class="year__arrow js-next-year">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                            <path
+                                d="M10 21L20 11L10 1L8.6875 2.3125L16.4375 10.0625H0V11.9375H16.4375L8.6875 19.6875L10 21Z"
+                                fill="#415FFD" />
+                        </svg>
+                    </button>
                 </div>
-                <div class="swiper news-swiper">
+                <div class="year__container margin_top">
+                    <div class="year__block month active js-month-block">
+                        <span>Март</span>
+                    </div>
+                    <div class="year__block month js-month-block">
+                        <span>Февраль</span>
+                    </div>
+                    <div class="year__block month js-month-block">
+                        <span>Январь</span>
+                    </div>
+                    <button class="year__arrow js-next-month">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                            <path
+                                d="M10 21L20 11L10 1L8.6875 2.3125L16.4375 10.0625H0V11.9375H16.4375L8.6875 19.6875L10 21Z"
+                                fill="#415FFD" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="swiper news-swiper margin_top">
                     <div class="swiper-wrapper news__container">
                         <div class="swiper-slide">
                             <div class="news__card">
@@ -264,7 +298,6 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-                <a href="archive-news.html" class="news__button btn border">Архив новостей</a>
             </div>
         </section>
         <section class="church-info section">

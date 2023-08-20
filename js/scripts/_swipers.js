@@ -4,6 +4,30 @@ export let swiper = {
     init: function () {
         this.swiperNewsMob();
         this.swiperTimetableMob();
+        this.gallerySwiper();
+        this.galleryDetailSwiper();
+    },
+
+    galleryDetailSwiper: function () {
+        if (document.body.clientWidth < 769) {
+            var swiperGallery = new Swiper(".gallery-detail-swiper", {
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        }
+    },
+
+    gallerySwiper: function () {
+        if (document.body.clientWidth < 769) {
+            var swiperGallery = new Swiper(".gallery-swiper", {
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        }
     },
 
     swiperTimetableMob: function () {

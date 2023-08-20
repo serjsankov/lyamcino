@@ -1,6 +1,14 @@
 .news {
     &__upper {
         padding: 50px 0 20px;
+
+        &.archive_padding {
+            padding: 0 0 27px;
+
+            @media screen and (max-width: 768px) {
+                padding: 26px 0 13px;
+            }
+        }
     }
 
     &__container {
@@ -111,6 +119,10 @@
 
         @media screen and (max-width: 768px) {
             padding-bottom: 87px;
+        }
+
+        &.margin_top {
+            margin-top: 42px;
         }
     }
 

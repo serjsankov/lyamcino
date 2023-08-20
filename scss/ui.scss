@@ -178,6 +178,11 @@ html {
 
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 600px) {
+        font-size: 13px;
+        line-height: 15px;
+    }
 }
 
 .nice-select .option.focus, .nice-select .option.selected.focus, .nice-select .option:hover {
@@ -190,4 +195,60 @@ html {
     background: none;
     font-weight: 700;
     color: $colorBlack;
+}
+
+.year {
+    &__container {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+
+        @media screen and (max-width: 600px) {
+            gap: 10px;
+        }
+
+        &.margin_top {
+            margin-top: 27px;
+        }
+    }
+
+    &__block {
+        border-radius: 10px;
+        background: $colorWhite;
+        border: 1px solid $colorBlue;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        height: 48px;
+        width: 77px;
+
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 400;
+        color: $colorBlue;
+
+        cursor: pointer;
+
+        @media screen and (max-width: 600px) {
+            height: 40px;
+            width: 70px;
+
+            font-size: 15px;
+            line-height: 17px;
+        }
+
+        &.month {
+            width: 109px;
+        }
+
+        &.active {
+            background: #BCD6EE;
+            border: none;
+            color: $colorBlack;
+        }
+    }
 }
