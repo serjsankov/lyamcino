@@ -1,3 +1,5 @@
+// commands - gulp watch, gulp build
+
 // plugins
 const {
     src,
